@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\dependencies\EnvelopeBySpine.Dependencies.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Hypar.Elements" Version="0.4.4"/>
+    <PackageReference Include="Hypar.Functions" Version="0.4.3.4"/>
+    <PackageReference Include="GeometryEx" Version="2.1.0"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+</Project>
