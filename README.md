@@ -1,14 +1,14 @@
 <img src="preview.png" width="512">
             
-# Envelope By Spine
+# Envelope By Centerline
 
-Creates building Envelope elements derived from a polyline spine sketch, width, and height.
+Creates building Envelope elements derived from a polyline centerline sketch, width, and height.
 
 |Input Name|Type|Description|
 |---|---|---|
-|Spine|Geometry|Spine of the building envelope.|
+|Centerline|Geometry|Centerline of the building envelope.|
 |Building Height|Range|Overall height of the building from grade.|
-|Bar Width|Range|Width of the mass perpendicular to the spine.|
+|Bar Width|Range|Width of the mass perpendicular to the Centerline.|
 |Foundation Depth|Range|Depth of the building envelope below grade.|
 
 

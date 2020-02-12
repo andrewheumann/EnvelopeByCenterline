@@ -12,9 +12,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 
-namespace EnvelopeBySpine
+namespace EnvelopeByCenterline
 {
-    public class EnvelopeBySpineOutputs: ResultsBase
+    public class EnvelopeByCenterlineOutputs: ResultsBase
     {
 		/// <summary>
 		/// Height of the building.
@@ -31,21 +31,21 @@ namespace EnvelopeBySpine
 
         
         /// <summary>
-        /// Construct a EnvelopeBySpineOutputs with default inputs.
+        /// Construct a EnvelopeByCenterlineOutputs with default inputs.
         /// This should be used for testing only.
         /// </summary>
-        public EnvelopeBySpineOutputs() : base()
+        public EnvelopeByCenterlineOutputs() : base()
         {
 
         }
 
 
         /// <summary>
-        /// Construct a EnvelopeBySpineOutputs specifying all inputs.
+        /// Construct a EnvelopeByCenterlineOutputs specifying all inputs.
         /// </summary>
         /// <returns></returns>
         [JsonConstructor]
-        public EnvelopeBySpineOutputs(double height, double subgrade): base()
+        public EnvelopeByCenterlineOutputs(double height, double subgrade): base()
         {
 			this.Height = height;
 			this.Subgrade = subgrade;

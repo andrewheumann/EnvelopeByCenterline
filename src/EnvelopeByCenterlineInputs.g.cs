@@ -12,15 +12,15 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 
-namespace EnvelopeBySpine
+namespace EnvelopeByCenterline
 {
-    public class EnvelopeBySpineInputs: S3Args
+    public class EnvelopeByCenterlineInputs: S3Args
     {
 		/// <summary>
-		/// Spine of the building envelope.
+		/// Centerline of the building envelope.
 		/// </summary>
-		[JsonProperty("Spine")]
-		public Elements.Geometry.Polyline Spine {get;}
+		[JsonProperty("Centerline")]
+		public Elements.Geometry.Polyline Centerline {get;}
 
 		/// <summary>
 		/// Overall height of the building from grade.
@@ -29,7 +29,7 @@ namespace EnvelopeBySpine
 		public double BuildingHeight {get;}
 
 		/// <summary>
-		/// Width of the mass perpendicular to the spine.
+		/// Width of the mass perpendicular to the Centerline.
 		/// </summary>
 		[JsonProperty("Bar Width")]
 		public double BarWidth {get;}
@@ -43,12 +43,12 @@ namespace EnvelopeBySpine
 
         
         /// <summary>
-        /// Construct a EnvelopeBySpineInputs with default inputs.
+        /// Construct a EnvelopeByCenterlineInputs with default inputs.
         /// This should be used for testing only.
         /// </summary>
-        public EnvelopeBySpineInputs() : base()
+        public EnvelopeByCenterlineInputs() : base()
         {
-			this.Spine = new Elements.Geometry.Polyline(new []{new Vector3(0,0,0), new Vector3(0,1,0), new Vector3(1,1,0)});
+			this.Centerline = new Elements.Geometry.Polyline(new []{new Vector3(0,0,0), new Vector3(0,1,0), new Vector3(1,1,0)});
 			this.BuildingHeight = 100;
 			this.BarWidth = 30;
 			this.FoundationDepth = 20;
@@ -57,13 +57,13 @@ namespace EnvelopeBySpine
 
 
         /// <summary>
-        /// Construct a EnvelopeBySpineInputs specifying all inputs.
+        /// Construct a EnvelopeByCenterlineInputs specifying all inputs.
         /// </summary>
         /// <returns></returns>
         [JsonConstructor]
-        public EnvelopeBySpineInputs(Elements.Geometry.Polyline spine, double buildingheight, double barwidth, double foundationdepth, string bucketName, string uploadsBucket, Dictionary<string, string> modelInputKeys, string gltfKey, string elementsKey, string ifcKey): base(bucketName, uploadsBucket, modelInputKeys, gltfKey, elementsKey, ifcKey)
+        public EnvelopeByCenterlineInputs(Elements.Geometry.Polyline centerline, double buildingheight, double barwidth, double foundationdepth, string bucketName, string uploadsBucket, Dictionary<string, string> modelInputKeys, string gltfKey, string elementsKey, string ifcKey): base(bucketName, uploadsBucket, modelInputKeys, gltfKey, elementsKey, ifcKey)
         {
-			this.Spine = spine;
+			this.Centerline = centerline;
 			this.BuildingHeight = buildingheight;
 			this.BarWidth = barwidth;
 			this.FoundationDepth = foundationdepth;

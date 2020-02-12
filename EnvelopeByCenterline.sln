@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvelopeBySpine", "src\EnvelopeBySpine.csproj", "{5D7B1788-07FE-408D-AAA2-73A6398E06A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvelopeByCenterline", "src\EnvelopeByCenterline.csproj", "{5D7B1788-07FE-408D-AAA2-73A6398E06A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvelopeBySpine.Dependencies", "dependencies\EnvelopeBySpine.Dependencies.csproj", "{00725317-E299-4CD2-A8B5-34A7466A08E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvelopeByCenterline.Dependencies", "dependencies\EnvelopeByCenterline.Dependencies.csproj", "{00725317-E299-4CD2-A8B5-34A7466A08E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvelopeBySpine.tests", "test\EnvelopeBySpine.tests.csproj", "{3ABC3A07-C2BB-49F5-B27A-9C12A2A01621}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvelopeByCenterline.tests", "test\EnvelopeByCenterline.tests.csproj", "{3ABC3A07-C2BB-49F5-B27A-9C12A2A01621}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
