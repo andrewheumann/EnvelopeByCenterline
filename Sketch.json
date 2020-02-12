@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/andrewheumann/EnvelopeByCenterline/master/Sketch.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A perimeter excluding other elements.",
+    "description": "A geometric polyline sketch.",
     "title": "Exclusion",
     "x-namespace": "Elements",
     "type": "object",
