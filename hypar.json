@@ -2,6 +2,7 @@
   "$schema": "https://hypar.io/Schemas/Function.json",
   "description": "Creates building Envelope elements derived from a polyline centerline sketch, width, and height.",
   "id": "9f54e26f-2c3d-4a60-b582-fdd82af403c2",
+  "language": "C#",
   "name": "Envelope By Centerline",
   "repository_url": "https://github.com/hypar-io/function",
   "model_output": "Envelope",
