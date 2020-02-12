@@ -2,12 +2,12 @@
     "$id": "https://raw.githubusercontent.com/andrewheumann/EnvelopeByCenterline/master/Sketch.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A geometric polyline sketch.",
-    "title": "Exclusion",
+    "title": "Sketch",
     "x-namespace": "Elements",
     "type": "object",
     "allOf": [
         {
-            "$ref": "https://hypar.io/Schemas/GeometricElement.json"
+            "$ref": "https://hypar.io/Schemas/Element.json"
         }
     ],
     "required": [
